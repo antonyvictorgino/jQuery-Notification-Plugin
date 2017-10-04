@@ -1,0 +1,107 @@
+<html>
+  <head>
+  <title>jQuery Plugin Test</title>
+  <link rel="stylesheet" href="css/jquery.notify.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.notify.js"></script>
+  <script>
+  $(document).ready(function(){
+
+    $("#btnSuccessbottomleft").click(function(){
+      $.Notify({
+        text : 'Save invoice to database',
+        headerText:' Invoice Save Success',
+        type:'Success',
+        position:'bottom-left'
+      });
+    });
+
+    $("#btnSuccesstopright").click(function(){
+      $.Notify({
+        text : 'Save invoice to database',
+        headerText:' Invoice Save Success',
+        type:'Success',
+        position:'top-right'
+      });
+    });
+
+    $("#btnSuccessbottomright").click(function(){
+      $.Notify({
+        text : 'Save invoice to database',
+        headerText:' Invoice Save Success',
+        type:'Success',
+        position:'bottom-right'
+      });
+    });
+
+    $("#btnSuccesstopleft").click(function(){
+      $.Notify({
+        text : 'Save invoice to database',
+        headerText:' Invoice Save Success',
+        type:'Success',
+        position:'top-left'
+      });
+    });
+
+    $("#btnFailurebottomleft").click(function(){
+      $.Notify({
+        text : 'Invoice save to database failed.',
+        headerText:' Invoice Save Failed',
+        type:'Failure',
+        position:'bottom-left'
+      });
+    });
+
+    $("#btnFailuretopleft").click(function(){
+      $.Notify({
+        text : 'Invoice save to database failed.',
+        headerText:' Invoice Save Failed',
+        type:'Failure',
+        position:'top-left'
+      });
+    });
+
+    $("#btnFailurebottomright").click(function(){
+      $.Notify({
+        text : 'Invoice save to database failed.',
+        headerText:' Invoice Save Failed',
+        type:'Failure',
+        position:'bottom-right'
+      });
+    });
+
+    $("#btnFailuretopright").click(function(){
+      $.Notify({
+        text : 'Invoice save to database failed.',
+        headerText:' Invoice Save Failed',
+        type:'Failure',
+        position:'top-right'
+      });
+    });
+
+
+
+
+  });
+  </script>
+  </head>
+  <body>
+
+  <div style="padding:50px">
+        <button id='btnSuccessbottomleft'>Success-bottom-left</button>
+        <button id='btnSuccesstopright'>Success-top-right</button>
+        <button id='btnSuccessbottomright'>Success-bottom-right</button>
+        <button id='btnSuccesstopleft'>Success-top-left</button>
+  </div>
+
+  <div style="padding:50px">
+        <button id='btnFailurebottomleft'>Failure-bottom-left</button>
+        <button id='btnFailuretopleft'>Failure-top-left</button>
+        <button id='btnFailurebottomright'>Failure-bottom-right</button>
+        <button id='btnFailuretopright'>Failure-top-right</button>
+  </div>
+
+
+
+  </body>
+</html>
